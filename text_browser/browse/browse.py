@@ -1,5 +1,6 @@
 """Module Docstring"""
 import subprocess
+import sys
 
 import html2text
 import isort
@@ -9,6 +10,8 @@ import snoop
 from blessed import Terminal
 from snoop import pp
 
+from text_browser.search import search_engine
+
 
 def type_watch(source, value):
     return "type({})".format(source), type(value)
@@ -17,9 +20,11 @@ def type_watch(source, value):
 snoop.install(watch_extras=[type_watch])
 
 
-# @snoop
-def get_request(url):
+@snoop
+def get_request():
     """"""
+
+    url = search_engine.search_engine()
 
     r = requests.get(url)
     content = r.text
@@ -29,7 +34,7 @@ def get_request(url):
         cont = html2text.html2text(content)
         with open("content.txt", "w") as f:
             f.write(cont)
-        cmd = "rich '/home/mic/python/text_browser/text_browser/content.txt' --pager --theme nord"
+        cmd = "rich 'content.txt' --pager --theme nord"
         subprocess.run(cmd, shell=True)
 
     if len(content) == 0:
@@ -43,7 +48,12 @@ def get_request(url):
             content_file()
     else:
         content_file()
+
     return content
+
+
+if __name__ == "__main__":
+    get_request()
 
 
 @snoop
