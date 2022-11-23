@@ -1,15 +1,16 @@
 """
-Searches, in Bing and Google,
+Searches, in Startpage, Bing and Google,
 for a query made by the user.
 """
-import click
-import isort
+import re
+import sys
+
 import pyfiglet
 import questionary
 import snoop
 from blessed import Terminal
 from questionary import Style
-from ScrapeSearchEngine.ScrapeSearchEngine import Google, Startpage
+from ScrapeSearchEngine.ScrapeSearchEngine import Bing, Google, Startpage
 from snoop import pp
 
 
@@ -26,7 +27,8 @@ def search_engine():
     Asks the user for a query, looks in
     the search engines for it and yanks
     ten results from each. Joins them
-    in a enumerated list.
+    in a enumerated list. This module can
+    be imported and ran in 'browse.py'.
     """
 
     term = Terminal()
@@ -50,22 +52,40 @@ def search_engine():
 
     startpage = Startpage(srch_query, userAgent)
     google = Google(srch_query, userAgent)
+    bing = Bing(srch_query, userAgent)
 
-    results = []
-    for idx, lnk in enumerate(startpage):
-        results.append((idx, lnk))
-    for count, link in enumerate(google, start=10):
-        results.append((count, link))
+    hrefs = []
+    for lnk in startpage:
+        hrefs.append(lnk)
+    for link in google:
+        hrefs.append(link)
+    for lk in bing:
+        hrefs.append(lk)
+
+    p = re.compile("\"|'")
+    quote_marks = []
+
+    for i in hrefs:
+        sane = p.sub("", i)
+        quote_marks.append(sane)
+
+    print(quote_marks)
+
+    href_set = set(quote_marks)
+
+    results = [i for i in enumerate(href_set)]
 
     fig = pyfiglet.Figlet(font="larry3d")
-    print(fig.renderText("search"))
+    print(term.home + term.clear, end="")
+    print(term.move_down(1) + term.salmon1(fig.renderText("search")), end="")
 
     for result in results:
-        print(result)
+        print(term.move_right(1) + term.bold_peachpuff(str(result)))
 
-    sel = input("What is your selection? ")
-    selection = int(sel)
-    tup = results[selection]
+    sel_question = input(term.move_right(1) + term.bold_darkorange2("{**} What is your selection? "))
+    if sel_question == "":
+        sys.exit()
+    tup = results[int(sel_question)]
     url = tup[1]
 
     return url

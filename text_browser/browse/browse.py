@@ -1,13 +1,13 @@
-"""Module Docstring"""
-import subprocess
-import sys
+"""
+This script imports a module that searches Startpage
+Google and Bing for a query, the user chooses one result,
+and here it is opened in Glow.
 
-import html2text
+"""
+import subprocess
+
 import isort
-import pyfiglet
-import requests
 import snoop
-from blessed import Terminal
 from snoop import pp
 
 from text_browser.search import search_engine
@@ -20,55 +20,23 @@ def type_watch(source, value):
 snoop.install(watch_extras=[type_watch])
 
 
-@snoop
+# @snoop
 def get_request():
-    """"""
+    """
+    We're basically calling two cli apps to do all
+    the work. Pandoc downloads and converts a page
+    from HTML to Markdown. Glow views it..
+    """
 
     url = search_engine.search_engine()
+    output = "content.md"
 
-    r = requests.get(url)
-    content = r.text
+    cmd = f"pandoc --columns=100 -o {output} --wrap=auto -f html -t markdown {url}"
+    subprocess.run(cmd, shell=True)
 
-    def content_file():
-        """"""
-        cont = html2text.html2text(content)
-        with open("content.txt", "w") as f:
-            f.write(cont)
-        cmd = "rich 'content.txt' --pager --theme nord"
-        subprocess.run(cmd, shell=True)
-
-    if len(content) == 0:
-        if r.status_code == 200:
-            content_file()
-        elif r.status_code == 400:
-            print("Error 404, Not Found")
-        elif r.status_code == 500:
-            print("Error 500, Internal server error")
-        else:
-            content_file()
-    else:
-        content_file()
-
-    return content
+    cmd1 = "glow -s /home/mic/glamour/styles/mic.json"
+    subprocess.run(cmd1, cwd="/home/mic/python/text_browser/text_browser/browse", shell=True)
 
 
 if __name__ == "__main__":
     get_request()
-
-
-@snoop
-def main():
-    """"""
-
-    fig = pyfiglet.Figlet(font="larry3d")
-    print(fig.renderText("browser"))
-
-    while True:
-        link = input("URL: ")
-        if link == "quit":
-            break
-        get_request(link)
-
-
-if __name__ == "__main__":
-    main()
