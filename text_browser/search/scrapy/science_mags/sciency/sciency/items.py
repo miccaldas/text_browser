@@ -9,6 +9,6 @@ import scrapy
 class SciencyItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-    title = scrapy.Item()
-    text = scrapy.Item()
-    author = scrapy.Item()
+    title = scrapy.Field()
+    text = scrapy.Field()
+    author = scrapy.Field()

@@ -1,0 +1,98 @@
+Book Review: The Surpisingly Imprecise History of Measurement
+Christie Aschwanden    
+
+“The zeal to measure things accurately…” has a moral dimension.
+ It indicates respect for the concept of an objective reality – truth or fact – that is independent of what we want it to be, or what we “believe.
+” That’s called “honesty.
+”
+   granted that we can reliably measure precisely how hot or cold something is, but in fact we only have the tools and scales for determining temperature after a long series of experiments carried out over centuries.
+
+
+  As James Vincent recounts it in his fascinating new book, “,” the development of thermometry started with the human experience of heat and cold.
+ Then people made the first thermoscopes, instruments in which liquid such as water rises and falls with temperature changes.
+ These confirmed “obvious truths: that snow is colder than fire and summer is warmer than spring,” writes Vincent, a London-based reporter for .
+
+“Beyond Measure: The Hidden History of Measurement from Cubits to Quantum Constants,” by James Vincent (W.
+ W.
+ Norton & Company, 432 pages).
+
+  Over time, these first thermoscopes helped illuminate new ideas about temperature, such as the observation by the Venetian mathematician Giovanni Francesco Sagredo, a contemporary and friend of Galileo, that in the winter, “air is often colder than snow, that snow mixed with salt is colder still.
+”
+
+  Such findings allowed the addition of numerical markers on basic thermometers.
+ “These markers are arbitrary and singular at first,” Vincent writes, but as scientists experimented with them, they were able to correlate the markers to fixed points that allowed them to create replicable temperature scales that could be shared.
+ Fixed points were pinned down with greater precision, with each new stage successively building upon the previous one, until eventually, over the course of centuries and the work of hundreds of scientists, “a reliable scale is built, degree by degree, out of thin air,” Vincent writes.
+
+
+  The development of thermometers and temperature scales is a classic tale of scientific discovery, with numerous twists and challenges along the way.
+ For instance, the boiling point of water might seem like a steadfast point on which to construct a temperature scale, but determining what constitutes the boiling point of water was hardly straightforward, Vincent writes.
+ Many factors like atmospheric pressure, the purity of a water sample, and even the boiling vessel can affect the boiling point.
+
+
+  And then there’s the problem of definitions, he says.
+ “Does water boil when the first bubbles appear, or when they are produced in a continuous stream?” One temperature scale created in the 1750s by a British instrument maker nodded to this problem with separate markings for the point where water begins to boil and where it boils “vehemently.
+”
+
+  As it turned out, the boiling point of water was not the reliable thermometric marker that early researchers hoped.
+ In 1776, the Royal Society established a task force to determine the true boiling point of water.
+ The Swiss meteorologist Jean-André de Luc was a contributing member, who approached the problem by “watching pots of boiling water with the attentiveness of a new parent leaning over the crib, noting the speed, size, and sound of bubble formation.
+” In a series of experiments he studied how deoxygenating water could allow it to be heated above 100 degrees Celsius without boiling.
+ For four weeks, de Luc shook vessels of water by hand to remove oxygen bubbles.
+ “I ate, I read, I wrote, I saw my friend, I took my walks, all the while shaking my water,” he recounted in one report.
+
+
+  He’d set out to find the true boiling point of water, but instead of finding a single answer to the question, de Luc instead found “only a multitude of phenomena forced into homogeneity by this single, restrictive term,” Vincent writes.
+ (Scientists eventually turned to the steam produced by boiling water as a more reliable measure of temperature.
+)
+
+  And so it has gone with many types of measurements, Vincent observes.
+ “The quest for precision — the desire to burrow ever more closely into the weft of reality — unveils only irregularity on a far greater scale.
+” The same might be said of science writ large, and Vincent’s recounting of the development of some science’s most well-used measures are classic tales in the history of scientific discovery.
+ The meter, for instance, was originally intended as a unit of distance based on the Earth’s meridian until careful surveys showed that these meridians weren’t as perfect and unchanging as previously believed.
+
+
+  “Beyond Measure”offers engrossing accounts of the role that measurement has played in scientific progress, including its roles in medicine, math, and quantum mechanics, but the book is about much more than science.
+ Vincent also presents a deep history of measurement’s role in society.
+ “Measurement is not an intrinsic feature of the world, but a practice invented and imposed by humanity,” he writes.
+
+
+  Throughout human history, measurement has often provided a means for exerting power.
+ For instance, the Roman Empire created a method for measuring land called the  that divided territory into grids.
+ The system “not only simplified property rights and tax collection,” but also provided a way to portion out farmland to veterans and make roads amenable for marching troops, Vincent writes: “The survey, in other words, helped fund, direct, and reward Rome’s imperial war machine.
+”
+
+  During a period in the 17th and 18th centuries, a “quantifying spirit” spread across Sweden and the rest of Europe, Vincent writes.
+ People wanted to measure everything — the Earth, the skies, people and everything in between.
+ This wasn’t just an intellectual pursuit; it had a political purpose too, Vincent argues: “It was about dominion over the Earth.
+” He notes that the Swedish “mania for measurement coincided with the country’s rise to great power status and a period of military expansion.
+”
+
+  In early years of the United States, the surveyor’s chain became an “essential tool of colonial violence,” Vincent writes, because measurements of land were a step toward seizing ownership.
+ The land survey’s simplicity, along with “the oversight and control it offered the federal government, and the psychological transformation it wrought in the minds of the people — strengthening their conception of the country as wild and unclaimed — all helped White settlers steal land from Native tribes,” Vincent writes.
+
+
+  Whether by design or by accident, the tracking of measures inevitably changes human behavior.
+ Vincent presents a dramatic example of that happened during the Vietnam War when U.
+S.
+ Secretary of Defense Robert McNamara famously measured America’s success in the conflict according to the number of enemy fighters killed.
+ Vincent contends that not only were body counts an ineffective way to gauge progress in the war, they also encouraged war crimes.
+The pressure to increase body counts, he writes, led American soldiers to kill indiscriminately and report every Vietnamese casualty as enemy.
+ Although Vincent doesn’t mention it, McNamara’s emphasis on quantifiable metrics gave rise to the term “McNamara fallacy,” which refers to the mistake of making decisions based solely on information that can be quantified.
+
+
+  It’s a problem that can also be seen in the modern “quantified self” movement, in which everyday people track a long list of measurable things about themselves, seeking self-enlightenment.
+ Commonly measured things include hours of sleep, number of steps, and calories, all collected in search of self-knowledge.
+ This attention “is not always focused, and at times, adherents seem to measure as a reflex,” Vincent writes.
+
+
+  In online forums, he finds self-trackers who have recorded such trivialities as the correlation between anxiety and burp frequency, and cardinal direction they faced at regular intervals.
+ “By limiting the scope of self-investigation to what can be measured, practitioners are assured of finding answers,” Vincent writes, while noting that this type of self-tracking can be seen as a response to the dominant culture in which digital control systems and a vast surveillance network are always watching us.
+
+
+  Vincent acknowledges the dangers posed by reducing life and nature to numbers, but he also points to the ways that measurements can lead us to greater truths and beauty.
+ “Although measurement is stereotyped as a stultifying activity that reduces the vibrancy of the world to mere numbers,” Vincent writes, the opposite can also be true.
+ The zeal to measure things accurately can force us to examine the “nooks and crannies of physical experience that were previously lost in the melee.
+ The closer we look, the more the world reveals itself.
+”Christie Aschwanden is an award-winning science journalist.
+ She’s the author of “Good to Go: What the Athlete in All of Us Can Learn from the Strange Science of Recovery” (Norton) and co-host of the podcast “Emerging Form.
+” Find her on Twitter at @CragCrest.
