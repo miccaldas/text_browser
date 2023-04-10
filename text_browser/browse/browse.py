@@ -6,18 +6,17 @@ and here it is opened in Glow.
 """
 import subprocess
 
-import isort
-import snoop
-from snoop import pp
+# import snoop
+# from snoop import pp
 
 from text_browser.search import search_engine
 
 
-def type_watch(source, value):
-    return "type({})".format(source), type(value)
+# def type_watch(source, value):
+#     return f"type({source})", type(value)
 
 
-snoop.install(watch_extras=[type_watch])
+# snoop.install(watch_extras=[type_watch])
 
 
 # @snoop

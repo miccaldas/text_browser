@@ -7,18 +7,20 @@ import sys
 
 import pyfiglet
 import questionary
-import snoop
+
+# import snoop
 from blessed import Terminal
 from questionary import Style
 from ScrapeSearchEngine.ScrapeSearchEngine import Bing, Google, Startpage
-from snoop import pp
+
+# from snoop import pp
 
 
-def type_watch(source, value):
-    return "type({})".format(source), type(value)
+# def type_watch(source, value):
+#     return f"type({source})", type(value)
 
 
-snoop.install(watch_extras=[type_watch])
+# snoop.install(watch_extras=[type_watch])
 
 
 # @snoop
@@ -54,14 +56,9 @@ def search_engine():
     google = Google(srch_query, userAgent)
     bing = Bing(srch_query, userAgent)
 
-    hrefs = []
-    for lnk in startpage:
-        hrefs.append(lnk)
-    for link in google:
-        hrefs.append(link)
-    for lk in bing:
-        hrefs.append(lk)
-
+    hrefs = list(startpage)
+    hrefs.extend(iter(google))
+    hrefs.extend(iter(bing))
     p = re.compile("\"|'")
     quote_marks = []
 
@@ -73,7 +70,7 @@ def search_engine():
 
     href_set = set(quote_marks)
 
-    results = [i for i in enumerate(href_set)]
+    results = list(enumerate(href_set))
 
     fig = pyfiglet.Figlet(font="larry3d")
     print(term.home + term.clear, end="")
@@ -86,9 +83,7 @@ def search_engine():
     if sel_question == "":
         sys.exit()
     tup = results[int(sel_question)]
-    url = tup[1]
-
-    return url
+    return tup[1]
 
 
 if __name__ == "__main__":
